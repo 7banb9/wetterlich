@@ -1,6 +1,6 @@
-# ESP32 E-Paper Weather Display
+# Wetterlich: An ESP32 E-Paper Weather Display
 
-A low-power weather display using a wifi-enabled ESP32 microcontroller and a 7.5" E-Paper display. Weather data is fetched from the OpenWeatherMap API, and an onboard sensor provides indoor temperature and humidity.
+A low-power weather display using a WiFi-enabled ESP32 microcontroller and a 7.5" E-Paper display. Weather data is fetched from the OpenWeatherMap API, and an onboard sensor provides indoor temperature and humidity.
 
 <p float="left">
   <img src="showcase/assembled-demo-raleigh-front.jpg" />
@@ -18,7 +18,7 @@ A low-power weather display using a wifi-enabled ESP32 microcontroller and a 7.5
 
 - Customizable display: Supports multiple languages, units, time/date formats, AQI scales, personalization options, and much more.
 
-- Easy recharging: USB-C charging with battery monitoring.
+- Easy recharging: USB-C charging with battery monitoring (with FireBeetle 2 ESP32-E).
 
 The hourly outlook graph (bottom right) shows a line indicating temperature and shaded bars indicating probability of precipitation (or optionally volume of precipitation).
 
@@ -49,11 +49,9 @@ Here are two (slightly outdated) examples utilizing various configuration option
 
 ## Required Components
 
-  Some links below are affiliate links. Using them helps support the project at no extra cost to you—thanks for your support!
-
   | Component Type  | Component                                    | Notes                                                                                                    | Link                                                                         |
   |-----------------|----------------------------------------------|----------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-  | ESP32           | FireBeetle 2 ESP32-E                         | Features low-power design, USB-C, and battery management.                                                | Available [here](https://www.dfrobot.com/product-2195.html?tracking=PfSxQ8). |
+  | ESP32           | FireBeetle 2 ESP32-E                         | Features low-power design, USB-C, and battery management.                                                | Available [here](https://www.dfrobot.com/product-2195.html).                 |
   | E-Paper Display | See [Panel Support](#panel-support).         | See [Panel Support](#panel-support).                                                                     | See [Panel Support](#panel-support).                                         |
   | Adapter Board   | DESPI-C02                                    | Waveshare HATs (rev 2.2/2.3) are not recommended.                                                        | Available [here](https://www.aliexpress.us/item/3256804446769469.html).      |
   | Sensor          | BME280 (or DHT22)                            | Temperature, humidity, and pressure (DHT22 only measures temperature and humidity). 3.3V/5V compatible.  | Available from multiple vendors.                                             |
@@ -85,10 +83,10 @@ Other items needed:
 
 ### Enclosure Options
 
-You'll want a nice way to show off your project. Here are a few popular choices.
+If you want a nice way to show off your project. Here are a few popular choices.
 
 - DIY Wooden
-  - I made a small stand by hollowing out a piece of wood from the bottom. On the back, I used a short USB extension cable so that I can charge the battery without needing to remove the components from the stand. I also wired a small reset button to refresh the display manually. Additionally, I 3d printed a cover for the bottom, which is held on by magnets. The E-paper screen is very thin, so I used a thin piece of acrylic to support it.
+  - lmarzen made a small stand by hollowing out a piece of wood from the bottom. On the back, a short USB extension cable was used so that the battery can be charged without needing to remove the components from the stand. lamrzen also wired a small reset button to refresh the display manually. Additionally, a cover was 3D printed for the bottom, which is held on by magnets. The E-paper screen is very thin, so a thin piece of acrylic was used to support it.
   - Measurements:
     - depth = 63mm <br>
       height = 49mm <br>
@@ -119,7 +117,7 @@ You'll want a nice way to show off your project. Here are a few popular choices.
 
 This project can be completed without any soldering, if you choose your component selection carefully.
 - Buy "Jumper Wires" to connect your components.
-- Buy the [FireBeetle 2 ESP32-E w/ Headers](https://www.dfrobot.com/product-2231.html?tracking=PfSxQ8).
+- Buy the [FireBeetle 2 ESP32-E w/ Headers](https://www.dfrobot.com/product-2231.html).
 - Buy a BME280 (or DHT22) with headers soldered from the factory.
 - Buy a reset switch that is compatible with jumper wires.
 
